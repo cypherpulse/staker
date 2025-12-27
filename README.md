@@ -3,10 +3,13 @@
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.24-blue)](https://soliditylang.org/)
 [![Foundry](https://img.shields.io/badge/Foundry-Enabled-orange)](https://getfoundry.sh/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Base Chain](https://img.shields.io/badge/Chain-Base-8453-lightgrey)](https://base.org/)
-[![Testnet](https://img.shields.io/badge/Testnet-Deployed-0xfeEfd505E894eA194Aa6Cf6c0226d9Dce9F41323-blue)](https://sepolia.basescan.org/address/0xfeEfd505E894eA194Aa6Cf6c0226d9Dce9F41323)
+[![Base Chain](https://img.shields.io/badge/Base-Chain-blue)](https://base.org/)
+[![Testnet](https://img.shields.io/badge/Testnet-Deployed-blue)](https://sepolia.basescan.org/address/0xfeEfd505E894eA194Aa6Cf6c0226d9Dce9F41323)
+[![WalletConnect](https://img.shields.io/badge/WalletConnect-Supported-blue)](https://walletconnect.com/)
 
 A decentralized staking rewards protocol on Base Layer 2 that enables users to stake ETH or ERC-20 tokens to earn custom reward tokens, with protocol fees generating on-chain revenue for ecosystem development through the Talent Protocol Base Builders leaderboard.
+
+![BaseStaker Protocol](assets/staker.png)
 
 ## Table of Contents
 
@@ -27,6 +30,8 @@ A decentralized staking rewards protocol on Base Layer 2 that enables users to s
 BaseStaker is a comprehensive decentralized finance (DeFi) protocol designed for the Base Layer 2 network. It provides a secure, non-custodial staking mechanism where users can deposit ETH or ERC-20 tokens to earn yield through custom reward tokens. The protocol incorporates a sustainable economic model with protocol fees on staking operations, contributing to ecosystem growth and supporting the Talent Protocol Base Builders leaderboard.
 
 This project serves as a complete solution for DeFi staking, combining smart contract infrastructure with future frontend interfaces to provide users with an intuitive way to participate in decentralized staking.
+
+![Staking Interface](assets/stake2.png)
 
 ## Features
 
