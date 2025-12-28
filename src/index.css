@@ -131,19 +131,19 @@
   }
 
   .input-field {
-    @apply bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200;
+    @apply bg-input border border-border rounded-lg px-3 sm:px-4 py-2.5 sm:py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-200 text-sm sm:text-base;
   }
 
   .btn-primary {
-    @apply px-6 py-3 rounded-lg font-semibold text-primary-foreground bg-primary hover:bg-primary/90 transition-all duration-200;
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold text-primary-foreground bg-primary hover:bg-primary/90 transition-all duration-200 text-sm sm:text-base;
   }
 
   .btn-secondary {
-    @apply px-6 py-3 rounded-lg font-semibold bg-secondary text-secondary-foreground border border-border hover:bg-secondary/80 transition-all duration-200;
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold bg-secondary text-secondary-foreground border border-border hover:bg-secondary/80 transition-all duration-200 text-sm sm:text-base;
   }
 
   .btn-danger {
-    @apply px-6 py-3 rounded-lg font-semibold bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-all duration-200;
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-semibold bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-all duration-200 text-sm sm:text-base;
   }
 
   .section-header {
@@ -155,7 +155,7 @@
   }
 
   .value-text {
-    @apply text-2xl font-bold text-foreground font-mono;
+    @apply text-xl sm:text-2xl font-bold text-foreground font-mono;
   }
 
   .address-text {
