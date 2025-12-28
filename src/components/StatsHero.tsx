@@ -56,33 +56,33 @@ export function StatsHero() {
 
       <div className="relative container mx-auto px-4">
         {/* Hero Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4">
             <span className="text-primary">Stake & Earn</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto px-4">
             Stake your {tokenSymbol} and earn rewards. Simple, secure, and transparent.
           </p>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
           {stats.map((stat, index) => (
             <div 
               key={stat.label}
-              className="stat-card animate-fade-in"
+              className="stat-card animate-fade-in p-4 md:p-6"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start justify-between mb-4">
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center`}>
-                  <stat.icon className="w-6 h-6 text-foreground" />
+              <div className="flex items-start justify-between mb-3 md:mb-4">
+                <div className={`w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center`}>
+                  <stat.icon className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
                 </div>
               </div>
-              <p className="label-text">{stat.label}</p>
-              <div className="flex items-baseline gap-2">
-                <p className="value-text truncate">{stat.value}</p>
+              <p className="label-text text-xs md:text-sm">{stat.label}</p>
+              <div className="flex items-baseline gap-1 md:gap-2">
+                <p className="value-text text-xl md:text-2xl truncate">{stat.value}</p>
                 {stat.suffix && (
-                  <span className="text-sm text-muted-foreground">{stat.suffix}</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">{stat.suffix}</span>
                 )}
               </div>
             </div>
