@@ -15,16 +15,41 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-4 sm:gap-6 text-sm">
-            <a
-              href={`https://sepolia.basescan.org/address/${BASESTAKER_ADDRESS}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 sm:gap-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
-              Contract
-            </a>
+         <div className="flex items-center gap-4 sm:gap-6 text-sm">
+            {/* Contract link with copy button */}
+            <div className="flex items-center gap-1">
+              <a
+                href={`https://sepolia.basescan.org/address/${BASESTAKER_ADDRESS}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 sm:gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                Contract
+              </a>
+              
+              {/* COPY BUTTON - ADD THIS RIGHT HERE */}
+              <button
+                onClick={copyAddress}
+                aria-label={copied ? "Address copied" : "Copy contract address to clipboard"}
+                className="ml-1 p-1 text-muted-foreground hover:text-foreground transition-colors relative group"
+                title="Copy contract address"
+                disabled={copied}
+              >
+                {copied ? (
+                  <Check className="w-3 h-3 sm:w-4 sm:h-4 text-green-500" />
+                ) : (
+                  <Copy className="w-3 h-3 sm:w-4 sm:h-4" />
+                )}
+                
+                {/* Optional tooltip */}
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                  {copied ? 'Copied!' : 'Copy address'}
+                </div>
+              </button>
+            </div>
+
+            {/* GitHub link */}
             <a
               href="https://github.com"
               target="_blank"
@@ -35,7 +60,6 @@ export function Footer() {
               GitHub
             </a>
           </div>
-
           {/* Copyright */}
           <p className="text-xs sm:text-sm text-muted-foreground">
             Built on Base Sepolia
